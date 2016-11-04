@@ -15,17 +15,24 @@ public class Empregado {
     private String Nome;
     private String Sobrenome;
     private String Cpf;
-
-    public Empregado(String Nome, String Sobrenome, String Cpf) {
+    private String Tipo;
+    
+    public Empregado(int CodEmpregado,String Nome, String Sobrenome, String Cpf, String Tipo) {
+        this.CodEmpregado = CodEmpregado;
         this.Nome = Nome;
         this.Sobrenome = Sobrenome;
         this.Cpf = Cpf;
+        this.Tipo = Tipo;
+        
     }
 
-    public Empregado(int CodEmpregado) {
-        this.CodEmpregado = CodEmpregado;
+    public String getTipo() {
+        return Tipo;
     }
 
+    public void setTipo(String Tipo) {
+        this.Tipo = Tipo;
+    }
     public String getNome() {
         return Nome;
     }
