@@ -1,0 +1,6 @@
+   private void jCalculoActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        TotalVendas = Float.valueOf(jTxtVenda.getText());
+        TotalComissao = Float.valueOf(jtxtComissao1.getText());
+        ResCom =  (TotalVendas /100) * TotalComissao;
+        jTxtTotalComissao.setText(String.valueOf(ResCom));
+    }    
